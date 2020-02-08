@@ -330,6 +330,7 @@ export default (state = defaultState, action: AnyAction): AnnotationState => {
                 objectType,
                 points,
                 activeControl,
+                rectDrawingMethod,
             } = action.payload;
 
             return {
@@ -347,6 +348,7 @@ export default (state = defaultState, action: AnyAction): AnnotationState => {
                     activeNumOfPoints: points,
                     activeObjectType: objectType,
                     activeShapeType: shapeType,
+                    activeRectDrawingMethod: rectDrawingMethod,
                 },
             };
         }
